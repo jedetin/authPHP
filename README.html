@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>authPHP</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="authphp">authPHP</h1>
+<p>standalone PHP Object-Oriented Authentication codebase (framework independent)</p>
+<h2 id="requests">Requests</h2>
+<p>To be sent as <code>POST</code> parameters through an API or HTML form<br>
+<code>login: username, password</code><br>
+<code>register: email, password_1, password_2</code></p>
+<h3 id="database-connection">Database connection</h3>
+<p>Mention as private variables in Database Class:</p>
+<pre><code>private  $host  =  'localhost';
+private  $username  =  'root';
+private  $password  =  'password#123';
+private  $database  =  'users';
+</code></pre>
+<h4 id="class-methods">Class Methods</h4>
+<p><code>loginUser</code> : Login user and generate SESSION headers<br>
+<code>registerUser</code>: Create new user and login<br>
+<code>queryUser</code>: Find if a user exists in Database<br>
+<code>query</code>: Custom queries (For development only)</p>
+<h4 id="error-handling-and-response">Error handling and response</h4>
+<p>Possible as either <em>JSON-objects</em> or <em>direct PHP output</em></p>
+<h1 id="future-updates">Future updates:</h1>
+<p>To be worked on:</p>
+<ul>
+<li>Seperate responses for HTML form requests and API requests</li>
+<li>generation of tokens and timeouts</li>
+</ul>
+</div>
+</body>
+
+</html>
